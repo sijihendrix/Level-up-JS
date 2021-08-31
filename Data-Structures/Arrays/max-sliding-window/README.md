@@ -1,1 +1,1 @@
-# Find the maximum number in a sliding window of an array problem
+### Find the maximum number in a sliding window of an array problem
