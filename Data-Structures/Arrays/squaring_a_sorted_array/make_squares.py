@@ -3,20 +3,18 @@ def make_squares(arr):
   # TODO: Write your code here
   for element in arr:
       squares.append(element**2)
-#   squares.sort()
   return sort_list(squares)
 
 
 def sort_list(list):
-    # data_list = [-5, -23, 5, 0, 23, -6, 23, 67]
     new_list = []
 
     while list:
         minimum = list[0]  # arbitrary number in list 
         for x in list: 
-            if x < minimum:
+            if x < minimum: # all elements less than arbitrary element
                 minimum = x
-        new_list.append(minimum)
+        new_list.append(minimum) #array gets filled with the least valued element till the highest
         list.remove(minimum)    
 
     return new_list
